@@ -21,9 +21,14 @@ module.exports = repoDc = {
 
     if (resp.message === 'Not Found') {
       return chalk.red('No releases for this repository');
-    } else {
-      return 'Downloads: ' + resp.assets[0].download_count;
     }
+
+    if ((typeof resp.assets[0] === 'undefined') || (typeof  resp.assets[0].download_count === 'undefined')) {
+      console.log(resp);
+      return chalk.red('Could not get downloads for this repository');
+    }
+
+    return 'Downloads: ' + resp.assets[0].download_count;
   }
 };
 
