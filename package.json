@@ -4,10 +4,10 @@
   "description": "Get the download count of a repo's latest release",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gmontalvoriv/repo-dc"
+    "url": "https://github.com/gmontalvoriv/repo-download-count"
   },
   "bugs": {
-    "url": "https://github.com/gmontalvoriv/repo-dc/issues"
+    "url": "https://github.com/gmontalvoriv/repo-download-count/issues"
   },
   "main": "cli.js",
   "bin": {
